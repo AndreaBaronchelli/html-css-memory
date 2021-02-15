@@ -22,6 +22,7 @@ body {
 header {
     margin-bottom: 20px;
 }
+
 header h1 {
     text-align: center;
     line-height: 120px;
@@ -50,7 +51,7 @@ main {
 }
 
 .card:hover{
-    background:white
+    background:white;
 }
 
 .card img {
@@ -58,16 +59,23 @@ main {
     width: 75%;
     left: 30px;
     bottom: 70px;
+    visibility: hidden;
+}
+
+.card:hover img {
+    visibility: visible;
 }
 
 .card .text {
     height: 100%;
     width: 100%;
     color: #e51a85;
+    visibility: hidden;
 }
 
-.card .text:hover {
+.card:hover .text {
     color: orange;
+    visibility: visible;
 }
 
 .card .text{
@@ -81,11 +89,16 @@ main {
     background:white; 
 }
 
+.card.fixed .text {
+    visibility: visible;
+}
+
 .card.fixed img {
     position: absolute;
     width: 75%;
     left: 30px;
-    bottom: 70px
+    bottom: 70px;
+    visibility: visible;
 }
 
 /* FOOTER */
