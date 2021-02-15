@@ -19,6 +19,9 @@ body {
 }
 
 /* HEADER */
+header {
+    margin-bottom: 20px;
+}
 header h1 {
     text-align: center;
     line-height: 120px;
@@ -63,14 +66,13 @@ main {
     color: #e51a85;
 }
 
-.card .text h2:hover {
+.card .text:hover {
     color: orange;
 }
 
-.card .text h2 {
+.card .text{
     width: 100%;
-    position: absolute;
-    bottom: 20px;
+    padding-top: 230px;
     font-size: 50px;
     text-align: center;
 }
@@ -84,4 +86,11 @@ main {
     width: 75%;
     left: 30px;
     bottom: 70px
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
 }
